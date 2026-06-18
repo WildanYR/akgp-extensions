@@ -1,9 +1,9 @@
 [project]
-name = "mamibeb_extensions"
+name = "akgp_extensions"
 authors = [
     { name = "WildanYR", email = "wildanyahya99@gmail.com"}
 ]
-description = "Ekstensi ERPNext untuk menerapkan workflow dari Mamibeb"
+description = "Ekstensi ERPNext untuk menerapkan workflow dari AKG Project"
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]

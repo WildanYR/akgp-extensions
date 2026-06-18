@@ -1,0 +1,56 @@
+{
+  "actions": [],
+  "autoname": "format:KMT-{year}-{month}-{###}",
+  "creation": "2026-06-15 18:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": ["template_name", "month", "year", "template_items"],
+  "fields": [
+    {
+      "fieldname": "template_name",
+      "fieldtype": "Data",
+      "label": "Template Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "month",
+      "fieldtype": "Select",
+      "label": "Month",
+      "options": "Januari\nFebruari\nMaret\nApril\nMei\nJuni\nJuli\nAgustus\nSeptember\nOktober\nNovember\nDesember",
+      "reqd": 1
+    },
+    {
+      "fieldname": "year",
+      "fieldtype": "Int",
+      "label": "Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "template_items",
+      "fieldtype": "Table",
+      "label": "Daily Template Menu",
+      "options": "Catering Menu Template Item"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "modified": "2026-06-15 18:00:00",
+  "modified_by": "Administrator",
+  "module": "AKGP Extensions",
+  "name": "Catering Menu Template",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "states": []
+}

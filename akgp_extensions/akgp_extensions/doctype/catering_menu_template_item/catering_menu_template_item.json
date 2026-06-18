@@ -1,0 +1,43 @@
+{
+  "actions": [],
+  "creation": "2026-06-15 18:00:00",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": ["day_of_month", "meal_category", "item_code"],
+  "fields": [
+    {
+      "fieldname": "day_of_month",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Day of Month",
+      "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31",
+      "reqd": 1
+    },
+    {
+      "fieldname": "meal_category",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Meal Category",
+      "options": "Catering Meal Category",
+      "reqd": 1
+    },
+    {
+      "fieldname": "item_code",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Item Menu",
+      "options": "Item",
+      "reqd": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 1,
+  "modified": "2026-06-15 18:00:00",
+  "modified_by": "Administrator",
+  "module": "AKGP Extensions",
+  "name": "Catering Menu Template Item",
+  "owner": "Administrator",
+  "permissions": [],
+  "states": []
+}

@@ -1,0 +1,159 @@
+{
+  "actions": [],
+  "autoname": "format:CO-{YYYY}-{MM}-{#####}",
+  "creation": "2026-06-15 18:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "customer_info",
+    "customer",
+    "company",
+    "start_date",
+    "end_date",
+    "menu_template",
+    "skip_sundays",
+    "column_break_6",
+    "financial_tracking",
+    "total_billed",
+    "total_paid",
+    "payment_status",
+    "status",
+    "configuration",
+    "categories",
+    "operations_logs",
+    "schedule_items"
+  ],
+  "fields": [
+    {
+      "fieldname": "customer_info",
+      "fieldtype": "Section Break",
+      "label": "Customer Info"
+    },
+    {
+      "fieldname": "customer",
+      "fieldtype": "Link",
+      "label": "Customer",
+      "options": "Customer",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "menu_template",
+      "fieldtype": "Link",
+      "label": "Menu Template",
+      "options": "Catering Menu Template",
+      "reqd": 1
+    },
+    {
+      "default": "1",
+      "fieldname": "skip_sundays",
+      "fieldtype": "Check",
+      "label": "Skip Sundays"
+    },
+    {
+      "fieldname": "column_break_6",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "financial_tracking",
+      "fieldtype": "Section Break",
+      "label": "Financial Tracking"
+    },
+    {
+      "default": "0",
+      "fieldname": "total_billed",
+      "fieldtype": "Currency",
+      "label": "Total Billed",
+      "read_only": 1
+    },
+    {
+      "default": "0",
+      "fieldname": "total_paid",
+      "fieldtype": "Currency",
+      "label": "Total Paid",
+      "read_only": 1
+    },
+    {
+      "default": "Unpaid",
+      "fieldname": "payment_status",
+      "fieldtype": "Select",
+      "label": "Payment Status",
+      "options": "Unpaid\nPartially Paid\nFully Paid",
+      "read_only": 1
+    },
+    {
+      "default": "Draft",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nGenerating Sales Orders\nActive\nCompleted\nCancelled",
+      "read_only": 1
+    },
+    {
+      "fieldname": "configuration",
+      "fieldtype": "Section Break",
+      "label": "Configuration"
+    },
+    {
+      "fieldname": "categories",
+      "fieldtype": "Table",
+      "label": "Meal Categories",
+      "options": "Catering Order Category",
+      "reqd": 1
+    },
+    {
+      "fieldname": "operations_logs",
+      "fieldtype": "Section Break",
+      "label": "Operations & Logs"
+    },
+    {
+      "fieldname": "schedule_items",
+      "fieldtype": "Table",
+      "label": "Delivery & Menu Schedule",
+      "options": "Catering Order Item",
+      "allow_on_submit": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "is_submittable": 1,
+  "modified": "2026-06-15 18:00:00",
+  "modified_by": "Administrator",
+  "module": "AKGP Extensions",
+  "name": "Catering Order",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "cancel": 1,
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+    }
+  ],
+  "states": []
+}

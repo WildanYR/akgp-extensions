@@ -1,6 +1,9 @@
-### Mamibeb Extensions
+### AKGP Extensions
 
-Ekstensi ERPNext untuk menerapkan workflow dari Mamibeb
+Ekstensi ERPNext untuk menerapkan workflow dari Akgp
+
+> [!IMPORTANT]
+> **AI Developer & Agent Rules**: Untuk AI Agent yang bekerja pada repositori ini, harap membaca dan mengikuti aturan dasar yang tercantum di [AGENT.md](file:///home/arrosa/projects/frappe/Akgp-erp/apps/akgp_extensions/AGENT.md) sebelum melakukan modifikasi kode.
 
 ### Installation
 
@@ -9,7 +12,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 ```bash
 cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch version-16
-bench install-app mamibeb_extensions
+bench install-app akgp_extensions
 ```
 
 ### Contributing
@@ -17,7 +20,7 @@ bench install-app mamibeb_extensions
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
 ```bash
-cd apps/mamibeb_extensions
+cd apps/akgp_extensions
 pre-commit install
 ```
 
