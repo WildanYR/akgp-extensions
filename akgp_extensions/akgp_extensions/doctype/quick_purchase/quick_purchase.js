@@ -32,6 +32,17 @@ frappe.ui.form.on("Quick Purchase", {
 				},
 			};
 		});
+
+		frm.set_query("material_request", function () {
+			return {
+				filters: {
+					docstatus: 1,
+					material_request_type: "Purchase",
+					per_ordered: ["<", 100],
+					status: ["not in", ["Stopped"]],
+				},
+			};
+		});
 	},
 
 	onload: function (frm) {

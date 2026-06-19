@@ -22,8 +22,8 @@ Dokumen ini berisi aturan dasar dan instruksi penting yang **wajib dibaca dan di
   - Referensi ERPNext: `../erpnext` (relatif dari root folder `akgp_extensions`)
   - Referensi HRMS: `../hrms` (relatif dari root folder `akgp_extensions`)
   - Jalur Absolut:
-    - ERPNext: `/home/arrosa/projects/frappe/Akgp-erp/apps/erpnext`
-    - HRMS: `/home/arrosa/projects/frappe/Akgp-erp/apps/hrms`
+    - ERPNext: `/home/arrosa/projects/frappe/akgp/apps/erpnext`
+    - HRMS: `/home/arrosa/projects/frappe/akgp/apps/hrms`
 
 ## 4. Pencarian Dokumentasi & Pustaka
 
@@ -31,12 +31,12 @@ Dokumen ini berisi aturan dasar dan instruksi penting yang **wajib dibaca dan di
 
 ## 5. Lokasi Folder & Prosedur Migrasi/Uji Coba
 
-- **Root Folder Proyek ini (App)**: `/home/arrosa/projects/frappe/Akgp-erp/apps/akgp_extensions`
-- **Root Folder Bench (Frappe Bench)**: `/home/arrosa/projects/frappe/Akgp-erp`
+- **Root Folder Proyek ini (App)**: `/home/arrosa/projects/frappe/akgp/apps/akgp_extensions`
+- **Root Folder Bench (Frappe Bench)**: `/home/arrosa/projects/frappe/akgp`
 - **Prosedur Setelah Melakukan Update**:
   Setiap kali melakukan perubahan kode (terutama perubahan skema database/DocType, fixtures, atau konfigurasi), **wajib** melakukan update pada site `Akgp.localhost` agar perubahan tersebut diterapkan dan siap dites.
 
-  Jalankan perintah berikut di folder root bench (`/home/arrosa/projects/frappe/Akgp-erp`):
+  Jalankan perintah berikut di folder root bench (`/home/arrosa/projects/frappe/akgp`):
 
   ```bash
   # Migrasi database dan update skema DocType ke site

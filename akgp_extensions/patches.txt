@@ -6,3 +6,4 @@
 # Patches added in this section will be executed after doctypes are migrated
 akgp_extensions.patches.seed_catering_meal_categories
 akgp_extensions.patches.add_custom_catering_fields
+akgp_extensions.patches.add_delivery_note_kurir_fields

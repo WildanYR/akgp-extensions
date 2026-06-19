@@ -13,7 +13,7 @@ sys.setrecursionlimit(4000)
 if not hasattr(frappe, "_orig_get_meta"):
     frappe._orig_get_meta = frappe.get_meta
 
-def patched_get_meta(doctype):
+def patched_get_meta(doctype, *args, **kwargs):
     # Directly mock the deleted Payment Gateway DocType to avoid database queries during dependency traversal
     if doctype == "Payment Gateway":
         class MockMeta:
@@ -26,7 +26,7 @@ def patched_get_meta(doctype):
             name = doctype
             autoname = ""
         return MockMeta()
-    return frappe._orig_get_meta(doctype)
+    return frappe._orig_get_meta(doctype, *args, **kwargs)
 
 frappe.get_meta = patched_get_meta
 
